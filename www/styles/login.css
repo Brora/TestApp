@@ -1,0 +1,239 @@
+@font-face{
+	font-family:Oswald-Regular;
+	src:url('../fonts/Oswald-Regular.otf') format('truetype');
+}
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@font-face{
+	src:url("http://dl.dropbox.com/u/94346812/cssdeck/fonts/pictos-regular-webfont.ttf") format("truetype"),
+		url("http://dl.dropbox.com/u/94346812/cssdeck/fonts/pictos-regular-webfont.otf") format("opentype"),
+		url("http://dl.dropbox.com/u/94346812/cssdeck/fonts/pictos-regular-webfont.svg") format("svg");
+	font-family:icon;
+}
+
+body{
+	background:#402f53;
+	font-family:'Open Sans';
+}
+label{
+	font-family:icon;
+	text-shadow:0 -1px 0 #666;
+	-webkit-font-smoothing: antialiased; 
+}
+
+#container{
+	width: 80%;
+	margin:auto;
+}
+#container h1{text-align:center;}
+
+h1 img {
+	margin:auto;
+	width: 90%;
+	top:10px;
+}
+
+#block,#option{
+	width:230px;
+	height:113px;
+	margin:auto;
+}
+#block{
+	background:#402f53;
+	margin-top:100px;
+}
+
+#block label{
+	position:absolute;
+	width:33px;
+	height:34px;
+	background:#9780ae;
+	margin:15px;
+	text-align:center;
+	line-height:2.2;
+	color:#857487;
+	border-top-left-radius:4px;
+	border-bottom-left-radius:4px;
+	border-right: 2px solid #E4FFFF;
+}
+#block label#pass{
+	position:absolute;
+	width:33px;
+	height:34px;
+	background:#9780ae;
+	margin:-5px 15px;
+}
+#submit{
+	border:0;
+	margin:-29px 180px;
+	border-top-left-radius:0px;
+	border-bottom-left-radius:0px;
+	border-top-right-radius:2px;
+	border-bottom-right-radius:2px;
+	font-family:icon;
+	background:#79bfb4;
+	text-shadow:0 -1px 0 #333;
+	box-shadow:-1px 0 1px 0px #6c5b6d;
+	font-size:12px;
+	font-family:Oswald-Regular;
+	line-height:2.8;
+	padding:0;
+}
+
+#block p{
+	width:150%;
+	height:20px;
+	color:#fff;
+	font-family:Oswald-Regular;
+	font-size:16px;
+	margin-left:-15px;
+}
+
+#submit{
+color: #fff;
+font-size: 18px;
+font-weight: bold;
+width: 196px;
+height: auto;
+margin-left: 16px;
+margin-top: 0px;
+}
+
+#submit:hover{
+	color:#fff;
+}
+#user, #pass{
+	box-shadow:0.1px 0 2px #6c5B6d;
+}
+#block input[type=text],#block  input[type=password], #option p {
+	font-family:'Oswald-Regular';
+	font-weight:300;
+	-webkit-font-smoothing: antialiased;
+	background-color:#9780ae;
+}
+#block input[type=text],#block  input[type=password]{
+	width:156px;
+	height:32px;
+	margin:15px 15px;
+	border:0;
+	border-radius:4px;
+	outline:0;
+	display:block;
+	font-size:18px;
+}
+
+#block input[type=password]{
+	width:156px;
+	height:32px;
+	margin:-5px 15px;
+}
+#option{
+	width:230px;
+	height:80px;
+	overflow:hidden;
+	margin:auto;
+}
+#option p{
+	color:#6c5B6d;
+	font-size:24px;
+	text-transform:uppercase;
+	padding:0px 18px;
+	margin-top:15px;
+	display:block;
+	float:left;
+	-webkit-font-smoothing: antialiased;
+/*text-shadow:0 -1px 0 #000;*/	
+}
+#option a{
+	-webkit-font-smoothing: antialiased;
+	color:#6c5B6d;
+	/*text-shadow:0 -1px 0 #000;*/
+	font-size:12px;
+	display:block;
+	float:right;
+	margin:26px 15px;
+}
+
+input{padding-left:40px;}
+#block:active > #block:before{
+	background-position:100px 100px;
+}
+
+/* placeholder */
+::-webkit-input-placeholder {
+	-webkit-font-smoothing: antialiased;
+	color:#fff;
+	font-size:16px;
+}
+:-moz-input-placeholder {  
+	color:#fff;
+	font-size:16px;
+}
+
+/* Want to see the magic ? So open a webkit browser then remove the comments below ! 
+
+/!\ YOU NEED TO PLACE THIS IN INPUTS /!\
+
+oninvalid="setCustomValidity('Custom Message')"
+*/
+
+input::-webkit-validation-bubble-message {
+	color:white;
+	background: #e62163;
+  border:0;
+	border-radius:0;
+	padding:0;
+	width:55px;
+	height:34px;
+	position:absolute;
+	float:left;
+	margin:-33px 208px;
+	text-align:center;
+	line-height:2.7em;
+	box-shadow:0 0 0;
+}
+input::-webkit-validation-bubble-message:before {
+	content:"X";
+	display:block;
+	font-family:icon;
+	color:white;
+	background: #e62163;
+  border:0;
+	border-radius:0;
+	padding:0;
+	width:34px;
+	height:34px;
+	position:absolute;
+	float:left;
+	margin:0px -208px;
+	text-align:center;
+	line-height:2.7em;
+	color: #fff;
+	border-top-left-radius:2px;
+	border-bottom-left-radius:2px;
+	-webkit-font-smoothing: antialiased;
+
+}
+input::-webkit-validation-bubble-icon {
+	display: none;
+}
+input::-webkit-validation-bubble-arrow {
+	background: #e62163;
+	border:0;
+	width:10px;
+	height:10px;
+	position:absolute;
+	margin:-23px 178px;
+}
+
+.blur{
+	width:130%;
+	height:350px;
+	background:#fff;
+	opacity:0.1;
+	margin-left:-34px;
+	-webkit-filter: blur(3px);
+}
+
+.loginFormContent{
+	margin-top:-280px;
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="styles/onsen-css-components-blue-basic-theme.css">
+    <link rel="stylesheet" href="styles/login.css">
+
+    <script src="lib/onsen/js/angular/angular.js"></script>
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script>
+      ons.bootstrap();
+    </script>
+	
+	<style>
+	.page__background{
+		opacity:0;
+	}
+	
+	.signIn
+	{
+		background: #fff;
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+		font-family:Oswald-Regular;
+		font-size: 20px;
+		color: #000;
+	}
+	
+	.signUp
+	{
+		background: #79bfb4;
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+		font-family:Oswald-Regular;
+		font-size: 20px;
+		color: #fff;
+	}
+	</style>
+  </head>
+  <body>
+	<ons-navigator animation="slide" var="app.navi">
+		<ons-page>
+			<div id="container">
+				<h1><img class="logo" src="images/brora-logo.png"></h1>
+				
+				<div id="block">
+				<div class="vspc form-row">
+				  <ons-button modifier="light" ng-click="app.navi.pushPage('login.html');" class="signIn">Sign In</ons-button>
+				</div>
+				<div class="vspc form-row">
+				  <ons-button modifier="light" ng-click="app.navi.pushPage('register.html');" class="signUp">Sign Up</ons-button>
+				</div>
+				</div>
+			</div>
+		</ons-page>
+	</ons-navigator>
+  
+	<ons-template id="login.html">
+		<ons-page>
+			<div id="container">
+				<h1><img src="images/brora-logo.png"></h1>
+				
+				<form id="form" name="form" action="#" method="post">
+					<div id="block">
+					<div class="blur"></div>
+					<div class="loginFormContent">
+					<p>ENTER YOUR USER NAME AND PASSWORD</p>
+					<br/>
+						<label id="user" for="name"><img src="images/usr_icon.png" style="width:15px; height:15px;"></label>
+						<input type="text" name="name" id="name" placeholder="Username" required/>
+						<label id="pass" for="password"><img src="images/pass_icon.png" style="margin-top:2px;width:20px; height:20px;"></label>
+						<input type="password" name="password" id="password" placeholder="Password" required />
+						<br />
+						<br />
+						<input type="submit" id="submit" name="submit" value="Log In"/>
+						</div>
+					</div>
+				</form>
+			</div>
+		</ons-page>
+	</ons-template>
+	
+	
+	
+
+  </body>
+</html>
