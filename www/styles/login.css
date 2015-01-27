@@ -104,6 +104,10 @@ margin-top: 0px;
 #user, #pass{
 	box-shadow:0.1px 0 2px #6c5B6d;
 }
+#user img{
+padding-right: 170px;
+margin-left: 10px;
+}
 #block input[type=text],#block  input[type=password], #option p {
 	font-family:'Oswald-Regular';
 	font-weight:300;
